@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/eka_tausta.jpeg) no-repeat center/cover; }
+
+* {
+  font-family: 'Cabin', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.navbar-fixed-top {
+  background-color: #00263A;
+  width: 100%;
+  position: fixed;
+  z-index: 300; }
+  .navbar-fixed-top a {
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem; }
+  .navbar-fixed-top a:hover {
+    color: #FF9800; }
+
+#future {
+  padding-top: 70px;
+  color: white;
+  font-family: 'Oswald', sans-serif; }
+
+#eka {
+  min-height: 100vh;
+  max-height: 100vh;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/eka_tausta.jpeg) no-repeat center/cover; }
+  #eka img {
+    align-self: center;
+    min-width: 60%;
+    max-width: 65%;
+    margin-top: 8rem; }
+  #eka p {
+    align-self: center;
+    font-size: 2.3vw;
+    margin-top: 140px;
+    color: white;
+    margin-right: 15px; }
+
+#footer {
+  height: 20px;
+  width: 100%;
+  background-color: #00263A; }
+
+#toka {
+  min-height: 100vh;
+  background-color: #6CACE4; }
+  #toka .otsikko {
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 5rem; }
+  #toka .flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    border-radius: 25px; }
+    #toka .flip-card img {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      align-self: stretch;
+      max-width: 60%;
+      min-width: 40%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      overflow: hidden; }
+  #toka .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    border-radius: 25px; }
+  #toka .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); }
+  #toka .flip-card-front, #toka .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden; }
+  #toka .flip-card-back {
+    background-color: #00263A;
+    color: #FF9800;
+    transform: rotateY(180deg);
+    text-align: center;
+    border-radius: 25px; }
+  #toka #kortti {
+    margin: 15px; }
+
+.modal-content {
+  background-color: #6CACE4; }
+
+@media only screen and (max-width: 767px) {
+  #eka {
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/eka_tausta.jpeg) no-repeat center/cover; }
+    #eka img {
+      align-self: center;
+      min-width: 20%;
+      max-width: 50%;
+      margin: 10px; }
+    #eka p {
+      align-self: center;
+      font-size: 4vw;
+      color: white;
+      margin-top: 70px; } }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3Mvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNJLDBIQUEwSCxFQUFBOztBQUc5SDtFQUNJLGdDQUFnQztFQUNoQyxVQUFTO0VBQ1QsU0FBUTtFQUNSLHNCQUFzQixFQUFBOztBQUcxQjtFQUNJLHlCQUF5QjtFQUN6QixXQUFVO0VBQ1YsZUFBZTtFQUNmLFlBQVksRUFBQTtFQUpoQjtJQU9RLGVBQWU7SUFDZixZQUFZO0lBQ1oscUJBQXFCO0lBQ3JCLGlCQUFpQixFQUFBO0VBVnpCO0lBYVEsY0FDSixFQUFBOztBQUdKO0VBQ0ksaUJBQWlCO0VBQ2pCLFlBQVk7RUFDWixpQ0FBaUMsRUFBQTs7QUFHckM7RUFDSSxpQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQiwwSEFBMEgsRUFBQTtFQUo5SDtJQU9RLGtCQUFrQjtJQUNsQixjQUFhO0lBQ2IsY0FBYTtJQUNiLGdCQUFnQixFQUFBO0VBVnhCO0lBYVEsa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixpQkFBaUI7SUFDakIsWUFBWTtJQUNaLGtCQUFrQixFQUFBOztBQUkxQjtFQUNJLFlBQVk7RUFDWixXQUFXO0VBQ1gseUJBQXlCLEVBQUE7O0FBSTdCO0VBQ0ksaUJBQWdCO0VBQ2hCLHlCQUF5QixFQUFBO0VBRjdCO0lBSVEsa0JBQWtCO0lBQ2xCLGlCQUFnQjtJQUNoQixtQkFBbUIsRUFBQTtFQU4zQjtJQVVRLDZCQUE2QjtJQUM3QixtQkFBbUI7SUFDbkIsV0FBVztJQUNYLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsbUJBQW1CLEVBQUE7SUFmM0I7TUFrQlEsa0JBQWtCO01BQ2xCLHFCQUFxQjtNQUNyQixtQkFBbUI7TUFDbkIsY0FBYTtNQUNiLGNBQWE7TUFDYixvQkFBaUI7U0FBakIsaUJBQWlCO01BQ2pCLGdCQUFnQixFQUFBO0VBeEJ4QjtJQTZCUSxrQkFBa0I7SUFDbEIsV0FBVTtJQUNWLFlBQVc7SUFDWCxrQkFBa0I7SUFDbEIsMEJBQTBCO0lBQzFCLDRCQUE0QjtJQUM1QixtQkFBbUIsRUFBQTtFQW5DM0I7SUF1Q1EsMEJBQTBCLEVBQUE7RUF2Q2xDO0lBMkNJLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsWUFBWTtJQUNaLG1DQUEyQjtZQUEzQiwyQkFBMkIsRUFBQTtFQTlDL0I7SUFrRFEseUJBQXlCO0lBQ3pCLGNBQWM7SUFDZCwwQkFBMEI7SUFDMUIsa0JBQWtCO0lBQ2xCLG1CQUFtQixFQUFBO0VBdEQzQjtJQTBEUSxZQUFZLEVBQUE7O0FBSXBCO0VBQ0kseUJBQXlCLEVBQUE7O0FBRzdCO0VBQ0k7SUFDSSxpQkFBZ0I7SUFDaEIsa0JBQWtCO0lBQ2xCLDBIQUEwSCxFQUFBO0lBSDlIO01BTVEsa0JBQWtCO01BQ2xCLGNBQWE7TUFDYixjQUFhO01BQ2IsWUFBVyxFQUFBO0lBVG5CO01BYUksa0JBQWtCO01BQ2xCLGNBQWM7TUFDZCxZQUFZO01BQ1osZ0JBQWUsRUFBQSxFQUNkIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

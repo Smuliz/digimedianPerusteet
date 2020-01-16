@@ -1,0 +1,151 @@
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/eka_tausta.jpeg) no-repeat center/cover;
+}
+
+* {
+    font-family: 'Cabin', sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;  
+}
+
+.navbar-fixed-top {
+    background-color: #00263A;
+    width:100%;
+    position: fixed;
+    z-index: 300;
+
+    a {
+        padding: 0.5rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    a:hover {
+        color: #FF9800
+    }
+}
+
+#future {
+    padding-top: 70px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+// Ensimmäsen viewport osuuden css.
+#eka {
+    min-height:100vh;
+    max-height: 100vh;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/eka_tausta.jpeg) no-repeat center/cover;
+
+    img {
+        align-self: center;
+        min-width:60%;
+        max-width:65%;
+        margin-top: 8rem;
+    }
+    p {
+        align-self: center;
+        font-size: 2.3vw;
+        margin-top: 140px;
+        color: white;
+        margin-right: 15px;
+    }  
+}
+
+#footer {
+    height: 20px;
+    width: 100%;
+    background-color: #00263A;
+}
+
+// toisen viewport osuuden css.
+#toka {
+    min-height:100vh;
+    background-color: #6CACE4;
+    .otsikko{
+        text-align: center;
+        padding-top:4rem;
+        margin-bottom: 5rem;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        perspective: 1000px;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        border-radius: 25px;
+
+        img {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        align-self: stretch;
+        max-width:60%;
+        min-width:40%;
+        object-fit: cover;
+        overflow: hidden;
+        }
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width:100%;
+        height:100%;
+        text-align: center;
+        transition: transform 0.7s;
+        transform-style: preserve-3d;
+        border-radius: 25px;        
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    }
+
+    .flip-card-back {
+        background-color: #00263A;
+        color: #FF9800;
+        transform: rotateY(180deg);
+        text-align: center;
+        border-radius: 25px;
+    }
+
+    #kortti {
+        margin: 15px;
+    }
+}
+
+.modal-content {
+    background-color: #6CACE4;
+}
+
+@media only screen and (max-width: 767px) {
+    #eka {
+        min-height:100vh;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/eka_tausta.jpeg) no-repeat center/cover;
+
+        img {
+            align-self: center;
+            min-width:20%;
+            max-width:50%;
+            margin:10px;
+        }
+        
+        p {
+        align-self: center;
+        font-size: 4vw;
+        color: white;
+        margin-top:70px;
+        }  
+    }
+
+}
