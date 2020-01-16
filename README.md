@@ -1,5 +1,4 @@
 # digimedianPerusteet
 Digimedian perusteet kurssin tehtäviä
 
--portfolio
--tvmaze API, AJAX + Bootstrap
+portfolio & tvmaze API, AJAX + Bootstrap
