@@ -1,0 +1,4 @@
+Form -> submit
+$.each silmukka (joko iteroidaan obj tai $ edessä olevaa) riippuen $.each vai .each
+
+

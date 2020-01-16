@@ -1,0 +1,33 @@
+body {
+    background-color: #00263A;
+}
+
+.jumbotron {
+    background-color: #FF9800;
+}
+
+.reuna{
+    background-color: #FF9800;
+}
+
+.card {
+    padding:10px;
+    background-color:#FFE4B5;
+}
+
+.card-img-top {
+    margin-top: 20px;
+    
+}
+
+ul {
+    background-color: #FFE4B5;
+}
+
+.list-group-item {
+    background-color: #FFE4B5;
+}
+
+img {
+    box-shadow: 4px 6px #f9ce84;
+}
